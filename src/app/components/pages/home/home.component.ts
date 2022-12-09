@@ -17,6 +17,8 @@ export class HomeComponent implements OnInit {
   baseApiUrl = environment.baseApiUrl;
 
   //To Do search
+  faSearch = faSearch;
+  searchTerm: string = "";
 
   constructor(private momentService: MomentService) { }
 
