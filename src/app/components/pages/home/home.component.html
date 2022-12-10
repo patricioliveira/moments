@@ -3,7 +3,8 @@
     <div class="search-container">
       <form>
         <fa-icon [icon]="faSearch"></fa-icon>
-        <input type="text" placeholder="Ou busque por or um momento">
+        <input type="text" placeholder="Ou busque por um momento..." (input)="search($event)">
+
       </form>
     </div>
     <div *ngIf="moments.length > 0; else noMoments">
