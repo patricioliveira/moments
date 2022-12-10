@@ -15,7 +15,7 @@ export class MomentService {
 
   private baseApiUrl = environment.baseApiUrl;
 
-  private apiUrl = `${this.baseApiUrl}api/moments`
+  private apiUrl = `${this.baseApiUrl}api/moments`;
 
   constructor( private http: HttpClient ) {
 
@@ -37,5 +37,9 @@ export class MomentService {
   removeMoment(id: number) {
     const url = `${this.apiUrl}/${id}`;
     return this.http.delete(url);
+  }
+
+  updateMoment(id: number, formData: FormData) {
+    
   }
 }
