@@ -17,6 +17,7 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { NewMomentsComponent } from './components/pages/new-moments/new-moments.component';
 import { MomentFormComponent } from './components/moment-form/moment-form.component';
 import { MessagesComponent } from './components/messages/messages.component';
+import { MomentComponent } from './components/pages/moment/moment.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MessagesComponent } from './components/messages/messages.component';
     HomeComponent,
     NewMomentsComponent,
     MomentFormComponent,
-    MessagesComponent
+    MessagesComponent,
+    MomentComponent
   ],
   imports: [
     BrowserModule,
