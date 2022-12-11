@@ -19,9 +19,20 @@
     </div>
 
     <div class="comments">
-        <h3>Comentários (0):</h3>
-    </div>
+        <h3>
+            Comentários ({{
+                moment.coments!.length > 0 ? moment.coments!.length : 0
+              }}):
+        </h3>
 
+        <div *ngIf="moment.coments!.length > 0; else noComments">
+            <p>Com comentários</p>
+        </div>
+
+        <ng-template #noComments>
+            <p>Não há comentários!</p>
+        </ng-template>
+    </div>
     <!-- To Do Comentários -->
 
 </div>
