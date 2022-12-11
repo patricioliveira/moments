@@ -12,6 +12,7 @@ export class MomentFormComponent implements OnInit {
   @Input() btnText!: string;
   @Input() momentData: Moment | null = null;
 
+  image?: File;
   momentForm!: FormGroup;
 
   constructor() { }
@@ -36,14 +37,14 @@ export class MomentFormComponent implements OnInit {
   onFileSelected(event: any) {
     const file: File = event.target.files[0];
 
-    this.momentForm.patchValue({ image: file })
+    this.momentForm.patchValue({ image: event.target.files[0] })
   }
 
   submit(){
     if(this.momentForm.invalid){
       return;
     }
-    console.log('Formulário enviado com sucesso!');
+    
     console.log(this.momentForm.value);
 
     this.onSubmit.emit(this.momentForm.value)
