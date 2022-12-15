@@ -18,7 +18,7 @@ export class EditMomentComponent implements OnInit {
   btnText: string = 'Editar';
 
   constructor(
-    private momentService: MomentService, 
+    private momentService: MomentService,
     private route: ActivatedRoute,
     private messageService: MessagesService,
     private router: Router
@@ -47,6 +47,8 @@ export class EditMomentComponent implements OnInit {
     this.messageService.add(`Moment ${this.moment.title} foi atualizado com sucesso!`);
 
     this.router.navigate(['/']);
+
+    this.router.getCurrentNavigation();
 
   }
 

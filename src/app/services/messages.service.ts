@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +8,7 @@ export class MessagesService {
 
   message: string = '';
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   add(message: string) {
     this.message = message;
@@ -15,6 +16,8 @@ export class MessagesService {
     setTimeout(() => {
       this.clear()
     }, 4000)
+
+    this.router.getCurrentNavigation();
   }
 
   clear() {

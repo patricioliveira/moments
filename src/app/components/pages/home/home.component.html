@@ -14,7 +14,7 @@
           <h3>{{ moment.title }}</h3>
           <p>{{ moment.description }}</p>
           <p class="date">Em: {{ moment.created_at }}</p>
-          <p>Comentários: {{ moment.coments?.length }}</p>
+          <p>Comentários: {{ moment.comments!.length }}</p>
           <p><a routerLink="moments/{{ moment.id }}">Detalhes</a></p>
         </div>
       </div>
@@ -23,5 +23,5 @@
         <h1>Não há momentos cadastrados!</h1>
         <a routerLink="/moments/new">Compartilhe seu momento agora mesmo!</a>
     </ng-template>
-</div>  
+</div>
 
