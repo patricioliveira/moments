@@ -9,9 +9,9 @@
 
     <div class="actions">
         <h3>Ações:</h3>
-        <a routerLink="/moments/edit/{{ moment.id }}" class="edit-btn">
+        <button routerLink="/moments/edit/{{ moment.id }}" class="edit-btn">
             <fa-icon [icon]="faEdit"></fa-icon> Editar
-        </a>
+        </button>
 
         <button class="remove-btn" (click)="removeHandler(moment.id!, moment.image)">
             <fa-icon [icon]="faTimes"></fa-icon> Excluir
@@ -57,6 +57,8 @@
             <input  type="submit" value="Comentar!">
         </form>
     </div>
+
+
 </div>
 
 

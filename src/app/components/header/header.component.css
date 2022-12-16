@@ -1,6 +1,6 @@
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 1em;
     background-color: #0D0D0D;
   }
@@ -13,9 +13,16 @@ nav {
     color: #9FA3A6;
   }
 
-  .navbar-brand img {
-    width: 40px;
-    margin-right: 0.6em;
+  .navbar-brand #logo1{
+    width: 18px;
+    margin-right: 0.4em;
+  }
+
+
+
+  .center-logo #logo2{
+    width: 200px;
+    margin-left: 13em;
   }
 
   .navbar-brand h2 {

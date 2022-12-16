@@ -60,11 +60,13 @@
   .search-container {
     margin-bottom: 2em;
     width: 100%;
+    border-radius: 10px;
   }
 
   .search-container form {
     width: 30%;
     position: relative;
+    border-radius: 10px;
   }
 
   .search-container fa-icon {
@@ -77,6 +79,7 @@
     padding: 0.5em;
     width: 100%;
     text-align: center;
+    border-radius: 10px;
   }
 
 

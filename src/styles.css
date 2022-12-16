@@ -1,9 +1,24 @@
+::-webkit-scrollbar {
+  width: 8px;
+  height: auto;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #d7f205;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #777;
+}
+
 * {
     padding: 0;
     margin: 0;
     font-family: Cambria;
     box-sizing: border-box;
     color: #444;
+
 }
 
 a {

@@ -14,3 +14,7 @@ h2, p {
     text-decoration: underline;
     font-weight: bold;
 }
+
+span {
+  color: #D7F205;
+}
