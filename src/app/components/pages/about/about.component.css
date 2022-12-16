@@ -12,4 +12,5 @@ h2, p {
 
 .about a {
     text-decoration: underline;
+    font-weight: bold;
 }

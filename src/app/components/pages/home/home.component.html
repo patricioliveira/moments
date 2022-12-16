@@ -3,7 +3,7 @@
     <div class="search-container">
       <form>
         <fa-icon [icon]="faSearch"></fa-icon>
-        <input type="text" placeholder="Ou busque por um momento..." (input)="search($event)">
+        <input type="text" placeholder="Ou busque por uma postagem..." (input)="search($event)">
 
       </form>
     </div>
@@ -20,8 +20,8 @@
       </div>
     </div>
     <ng-template #noMoments>
-        <h1>Não há momentos cadastrados!</h1>
-        <a routerLink="/moments/new">Compartilhe seu momento agora mesmo!</a>
+        <h2>Não há postagens!</h2>
+        <h4><a routerLink="/moments/new">Eternalize seu momento agora mesmo!</a></h4>
     </ng-template>
 </div>
 

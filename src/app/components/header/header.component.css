@@ -2,42 +2,49 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    border-bottom: 1px solid #777;
+    background-color: #0D0D0D;
   }
-  
-  .brand,
+
+  .navbar-brand,
   .links {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #9FA3A6;
   }
-  
-  .brand img {
+
+  .navbar-brand img {
     width: 40px;
     margin-right: 0.6em;
   }
-  
-  .brand h2 {
+
+  .navbar-brand h2 {
     transition: 0.4s;
   }
-  
-  .brand:hover > h2 {
-    color: #dec129;
+
+  .navbar-brand:hover {
+    color: #D7F205;
   }
-  
+
   .links li {
     margin-right: 1em;
     list-style: none;
   }
-  
+
   .links a {
     padding: 0.1em 0.3em;
+    color: #9FA3A6;
   }
-  
+
+  .links a:hover {
+    color: #D7F205;
+  }
+
   #add a {
-    color: #dec129;
+    color: #D7F205;
+    font-weight: bold;
   }
-  
+
   #add a:hover {
-    background-color: #efefef;
+    background-color: #9FA3A6;
   }

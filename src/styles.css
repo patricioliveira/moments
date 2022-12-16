@@ -13,7 +13,7 @@ a {
 }
 
 a:hover {
-    color: #dec129;
+    color: #d7f205;
 }
 
 /* Form Styles */
@@ -52,10 +52,10 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    color: #dec129;
-    border-color: #dec129;
+    color: #d7f205;
+    border-color: #d7f205;
     background-color: transparent;
-    
+
 }
 
 .validation-error p {
