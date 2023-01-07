@@ -14,13 +14,17 @@ export class MessagesService {
     this.message = message;
 
     setTimeout(() => {
-      this.clear()
-    }, 4000)
+      this.clear(), this.recharge()
+    }, 2500)
 
     this.router.getCurrentNavigation();
   }
 
   clear() {
     this.message = '';
+  }
+
+  recharge() {
+    window.location.reload();
   }
 }
